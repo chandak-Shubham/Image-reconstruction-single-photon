@@ -4,11 +4,11 @@ import numpy as np
 from torch.utils.data import DataLoader
 from PIL import Image
 
-from modified.dataloader.dataset_loader_final import get_test_scenes, SPCDataset
-from modified.models.attention_resunet_01 import AttentionResUNet
+from dataloader.dataset_loader import get_test_scenes, SPCDataset
+from models.attention_resunet import AttentionResUNet
 
 
-DATASET = "/iitgn/home/arjun.badola/projects/spc/spc/Data"
+DATASET = "Data"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
