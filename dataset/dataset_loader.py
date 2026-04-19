@@ -4,7 +4,7 @@ import torch
 from torch.utils.data import Dataset
 from PIL import Image
 from pathlib import Path
-from modified.utils.unpack_final import unpack
+from dataloader.unpack import unpack
 
 
 def get_train_scenes(dataset_path):
@@ -133,7 +133,7 @@ class SPCDataset(Dataset):
 # quick debug test for dataset loader
 if __name__ == "__main__":
 
-    DATASET = "/iitgn/home/arjun.badola/projects/spc/spc/Data"
+    DATASET = "Data"
 
     train_scenes = get_train_scenes(DATASET)
 
