@@ -7,8 +7,8 @@ from torch.utils.tensorboard import SummaryWriter
 import matplotlib.pyplot as plt
 from torchvision import models
 
-from modified.dataloader.dataset_loader import get_train_scenes, SPCDataset
-from modified.models.attention_resunet import AttentionResUNet
+from dataloader.dataset_loader import get_train_scenes, SPCDataset
+from model.attention_resunet import AttentionResUNet
 
 DATASET = "Data"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
