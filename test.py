@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 from PIL import Image
 
 from dataloader.dataset_loader import get_test_scenes, SPCDataset
-from models.attention_resunet import AttentionResUNet
+from model.attention_resunet import AttentionResUNet
 
 
 DATASET = "Data"
