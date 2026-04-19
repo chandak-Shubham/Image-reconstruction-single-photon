@@ -7,10 +7,10 @@ from torch.utils.tensorboard import SummaryWriter
 import matplotlib.pyplot as plt
 from torchvision import models
 
-from modified.dataloader.dataset_loader_final import get_train_scenes, SPCDataset
-from modified.models.attention_resunet_01 import AttentionResUNet
+from modified.dataloader.dataset_loader import get_train_scenes, SPCDataset
+from modified.models.attention_resunet import AttentionResUNet
 
-DATASET = "/iitgn/home/arjun.badola/projects/spc/spc/Data"
+DATASET = "Data"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 torch.backends.cudnn.benchmark = True
